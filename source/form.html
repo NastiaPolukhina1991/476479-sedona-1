@@ -43,16 +43,16 @@
           <legend class="form__title">Представьтесь:</legend>
           <ul class="form__list">
             <li class="form__item">
-              <label class="form__label form__label--personal" for="name">Имя*:</label>
-              <input class="form__input form__input--personal" id="name" type="text" placeholder="Петр" required>
+              <label class="form__label" for="name">Имя*:</label>
+              <input class="form__input" id="name" type="text" placeholder="Петр" required>
             </li>
             <li class="form__item">
-              <label class="form__label form__label--personal" for="name">Фамилия*:</label>
-              <input class="form__input form__input--personal" id="name" type="text" placeholder="Иванов" required>
+              <label class="form__label" for="name">Фамилия*:</label>
+              <input class="form__input" id="name" type="text" placeholder="Иванов" required>
             </li>
             <li class="form__item">
-              <label class="form__label form__label--personal" for="name">Отчество*:</label>
-              <input class="form__input form__input--personal" id="name" type="text" placeholder="Александрович" required>
+              <label class="form__label" for="name">Отчество*:</label>
+              <input class="form__input" id="name" type="text" placeholder="Александрович" required>
             </li>
           </ul>
         </fieldset>
@@ -60,12 +60,12 @@
           <legend class="form__title">Контактная информация:</legend>
           <ul class="form__list">
             <li class="form__item">
-              <label class="form__label form__label--personal" for="phone">Контактный телефон*:</label>
-              <input class="form__input form__input--personal" id="phone" type="text" placeholder="Введите телефон" required>
+              <label class="form__label" for="phone">Контактный телефон*:</label>
+              <input class="form__input form__input--phone" id="phone" type="text" placeholder="Введите телефон" required>
             </li>
             <li class="form__item">
-              <label class="form__label form__label--personal" for="mail">Электорнная почта*:</label>
-              <input class="form__input form__input--personal" id="mail" type="text" placeholder="Введите e-mail" required>
+              <label class="form__label" for="mail">Электорнная почта*:</label>
+              <input class="form__input form__input--mail" id="mail" type="text" placeholder="Введите e-mail" required>
             </li>
           </ul>
         </fieldset>
@@ -73,16 +73,16 @@
           <legend class="form__title">Ваше общее впечатление:</legend>
           <ul class="form__list">
             <li class="form__item">
-              <input class="form__input form__input--personal" id="good" type="radio" checked>
-              <label class="form__label form__label--personal" for="good">Cкорее положительное</label>
+              <input class="form__input form__input--radio" id="good" type="radio" checked>
+              <label class="form__label" for="good">Cкорее положительное</label>
             </li>
             <li class="form__item">
-              <input class="form__input form__input--personal" id="bad" type="radio" checked>
-              <label class="form__label form__label--personal" for="bad">Cкорее отрицательное</label>
+              <input class="form__input form__input--radio" id="bad" type="radio">
+              <label class="form__label" for="bad">Cкорее отрицательное</label>
             </li>
             <li class="form__item">
-              <input id="neutral" type="radio" checked>
-              <label class="form__label form__label--personal" for="neutral">Затрудняюсь ответить</label>
+              <input class="form__input form__input--radio" id="neutral" type="radio">
+              <label class="form__label" for="neutral">Затрудняюсь ответить</label>
             </li>
           </ul>
         </fieldset>
@@ -90,27 +90,27 @@
           <legend class="form__title">Посещенные достопримечательности</legend>
           <ul class="form__list">
             <li class="form__item">
-              <input class="form__input form__input--personal" id="bridge" type="checkbox" checked>
-              <label class="form__label form__label--personal" for="bridge">Мост Дьявола</label>
+              <input class="form__input form__input--checkbox" id="bridge" type="checkbox" checked>
+              <label class="form__label" for="bridge">Мост Дьявола</label>
             </li>
             <li class="form__item">
-              <input class="form__input form__input--personal" id="mountain" type="checkbox">
-              <label class="form__label form__label--personal" for="mountain">Гора-Колокол</label>
+              <input class="form__input form__input--checkbox" id="mountain" type="checkbox" checked>
+              <label class="form__label" for="mountain">Гора-Колокол</label>
             </li>
             <li class="form__item">
-              <input class="form__input form__input--personal" id="park" type="checkbox">
-              <label class="form__label form__label--personal" for="park">Слайд-Парк</label>
+              <input class="form__input form__input--checkbox" id="park" type="checkbox" checked>
+              <label class="form__label" for="park">Слайд-Парк</label>
             </li>
             <li class="form__item">
-              <input class="form__input form__input--personal" id="red-rocks" type="checkbox">
-              <label class="form__label form__label--personal" for="red-rocks">Красные скалы</label>
+              <input class="form__input form__input--checkbox" id="red-rocks" type="checkbox">
+              <label class="form__label" for="red-rocks">Красные скалы</label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="form__sections">
           <legend class="form__title">Опишите свои эмоции:</legend>
           <textarea name="comment" placeholder="Опишите подробно все свои восторги" rows="5" cols="10"></textarea>
-          <input class="form__input form__input--personal" type="submit" value="Отправить отзыв">
+          <button class="form__btn" type="submit">Отправить отзыв</button>
         </fieldset>
       </form>
     <footer class="page-footer">
