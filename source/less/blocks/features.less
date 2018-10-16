@@ -1,3 +1,24 @@
-.features {
-  width: 100%;
+.features-picture__wrapper {
+  background: @blue;
+  color: @white;
+}
+
+.features__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding: 20px;
+  text-align: left;
+}
+
+@media (min-width: @tablet-width) {
+  .features-picture__wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  .features__list {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+  }
 }

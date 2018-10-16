@@ -1,14 +1,39 @@
 .page-header {
-  position: relative;
   display: flex;
   flex-direction: column;
+}
+
+.page-header__logo-image {
+  margin: 0 auto;
+  order: 2;
+  width: 100px;
+  height: 80px;
+}
+
+.main-nav__list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style: none;
   text-align: center;
 }
 
-.page-header__logo {
-  position: absolute;
-  order: 2;
-  width: 100px;
-  height: 83px;
-  margin: 0 auto;
+@media (min-width: @tablet-width) {
+  .page-header {
+    position: relative;
+  }
+  .page-header__logo-image {
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
 }

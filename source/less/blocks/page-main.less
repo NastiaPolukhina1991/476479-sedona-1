@@ -1,4 +1,17 @@
 .page-main {
-  width: 100%;
-  background: red;
+  width: auto;
+}
+
+.page-main-image {
+  min-height: 380px;
+  background: url(../img/bg-back-mobile@1x.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #cbd4dc;
+}
+
+@media (min-width: @tablet-width) {
+  .page-main-image {
+    min-height: 500px;
+  }
 }
