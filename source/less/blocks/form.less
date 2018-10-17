@@ -1,3 +1,30 @@
 .form {
-  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.form fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.form__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@media (min-width: @tablet-width) {
+  .form__sections {
+    width: 100%;
+  }
+  .form__sections:nth-child(1), .form__sections:nth-child(3) {
+    width: 50%;
+  }
+  .form__sections:nth-child(3) {
+    order: -1;
+  }
 }
