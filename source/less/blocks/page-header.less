@@ -1,13 +1,76 @@
 .page-header {
   display: flex;
   flex-direction: column;
+  height: 279px;
 }
 
 .page-header__logo-image {
   margin: 0 auto;
   order: 2;
-  width: 100px;
-  height: 80px;
+  z-index: 1
+}
+
+.main-nav {
+  position: relative;
+  width: 320px;
+  min-height: 220px;
+  background: @blue;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 25px;
+  height: 25px;
+  border: 0;
+  cursor: pointer;
+  color: @white;
+  background: @blue;
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: -20px;
+  width: 22px;
+  height: 2px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 0 0 rgba(255, 255, 255, 0.3), 0 16px 0 0 rgba(255, 255, 255, 0.3);
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: 17px;
+  right: 20px;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 2px;
+    width: 22px;
+    height: 4px;
+    background-color: #ffffff;
+  }
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+  &::after {
+    transform: rotate(-45deg);
+  }
+  &:active::before,
+  &:active::after {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .main-nav__list {
@@ -17,16 +80,59 @@
   margin: 0;
   list-style: none;
   text-align: center;
+  font-weight: bold;
+}
+
+.main-nav__list a {
+  display: block;
+  padding-left: 21px;
+  padding-right: 21px;
+  padding-top: 7px;
+  padding-bottom: 6px;
+  font-size: 18px;
+  line-height: 40px;
+  color: @white;
+  border-bottom: 1px solid #678fa8;
+  border-top: 1px solid #9ac2db;
+}
+
+.main-nav__list a {
+  &:hover {
+    background-color: #669ec0;
+  }
+  &:active {
+    background-color: #5496bd;
+    color: rgba(1, 1, 1, 0.2);
+  }
 }
 
 @media (min-width: @tablet-width) {
   .page-header {
     position: relative;
+    height: 56px;
   }
   .page-header__logo-image {
     position: absolute;
     left: 0;
     right: 0;
+    z-index: 1;
+  }
+  .main-nav {
+    position: relative;
+    width: 100%;
+    min-height: 56px;
+    background: @white;
+  }
+  .main-nav__list a {
+    display: flex;
+    width: 100%;
+    font-size: 14px;
+    line-height: 26px;
+    padding: 0;
+    padding-top: 16px;
+    background: @white;
+    color: #000000;
+    border: none;
   }
   .main-nav__list {
     display: flex;
@@ -35,5 +141,8 @@
     padding: 0;
     margin: 0;
     list-style: none;
+  }
+  .main-nav__item:nth-child(3) {
+    margin-left: 170px;
   }
 }

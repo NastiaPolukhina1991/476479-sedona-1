@@ -1,23 +1,46 @@
 .features-welcome {
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 30px;
+  position: relative;
+  padding-left: 32px;
+  padding-right: 33px;
+  padding-top: 40px;
+  padding-bottom: 26px;
+}
+
+.features-welcome__title {
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
+}
+
+.features-welcome__description {
+  font-size: 14px;
+  line-height: 26px;
+  margin: 0;
+  padding-top: 27px;
 }
 
 @media (min-width: @tablet-width) {
   .features-welcome {
-    padding-left: 150px;
-    padding-right: 150px;
-    padding-top: 40px;
-    padding-bottom: 30px;
+    padding-left: 139px;
+    padding-right: 139px;
+    padding-top: 51px;
+    padding-bottom: 49px;
+  }
+  .features-welcome__title {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
   }
 }
 
 @media (min-width: @desktop-width) {
   .features-welcome {
-    padding-left: 250px;
-    padding-right: 250px;
-    padding-top: 50px;
-    padding-bottom: 40px;
+    padding-left: 355px;
+    padding-right: 355px;
+    padding-top: 51px;
+    padding-bottom: 50px;
+  }
+  .features-welcome__description {
+    padding-top: 30px;
   }
 }
