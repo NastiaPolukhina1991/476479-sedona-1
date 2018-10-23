@@ -4,7 +4,6 @@
 
 .page-main__header {
   padding-top: 39px;
-  border-bottom: 1px solid #eeeeee;
 }
 
 .page-main__title {
@@ -19,4 +18,40 @@
   line-height: 24px;
   padding-top: 26px;
   padding-bottom: 17px;
+
+  &--foto {
+    padding-left: 23px;
+    padding-right: 23px;
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-main__header {
+    padding-top: 75px;
+  }
+
+  .page-main__title {
+    font-size: 30px;
+  }
+
+  .page-main__description {
+    padding-left: 160px;
+    padding-right: 164px;
+    padding-top: 30px;
+    padding-bottom: 55px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main__header {
+    padding-top: 113px;
+  }
+
+  .page-main__description {
+    padding-left: 380px;
+    padding-right: 380px;
+    padding-bottom: 42px;
+  }
 }
