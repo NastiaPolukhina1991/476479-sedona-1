@@ -64,7 +64,7 @@
   border: none;
   padding-left: 22px;
   padding-top: 17px;
-  padding-bottom: 17px;
+  padding-bottom: 21px;
   font-size: 18px;
   font-weight: bold;
 
@@ -203,7 +203,7 @@
     width: 56px;
     height: 56px;
     border-radius: 5px;
-    background-color: #f2f2f2;
+    background-color: @grey;
   }
 }
 
@@ -226,7 +226,7 @@
 .form__enter {
   display: block;
   width: 225px;
-  background-color: #f2f2f2;
+  background-color: @grey;
   border: none;
   font-size: 18px;
   font-weight: bold;
@@ -442,6 +442,14 @@
       & .form__input:nth-child(2) {
         width: 165px;
         padding-right: 109px;
+      }
+
+      &--phone::after {
+        top: 0;
+      }
+
+      &--mail::after {
+        top: 0;
       }
     }
 

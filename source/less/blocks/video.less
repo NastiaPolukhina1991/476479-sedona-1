@@ -1,5 +1,6 @@
 .video {
   position: relative;
+  margin-bottom: 40px;
 }
 
 .video__control {
@@ -8,7 +9,7 @@
   height: 45px;
   bottom: 66px;
   left: 20px;
-  background: rgba("0, 0, 0, .6");
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .video__control-line {
@@ -17,25 +18,116 @@
   height: 3px;
   top: 22px;
   left: 22px;
-  background: rgba("255, 255, 255, .2");
+  background-color: rgba(188, 184, 184, 0.37);
 }
 
 .video__control-toggle {
   position: absolute;
   width: 9px;
   height: 9px;
-  left: 57px;
+  left: 35px;
   bottom: -3px;
   border-radius: 50%;
-  background: @white;
+  background-color: @white;
 }
 
 .video__btn {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 280px;
   height: 66px;
-  background: @white;
+  background-color: @grey;
   margin: auto;
+}
+
+.video__repeat {
+  position: absolute;
+  left: 45px;
+  width: 16px;
+  height: 20px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/icon-video-replay.svg");
+  background-repeat: no-repeat;
+}
+
+.video__subs {
+  position: absolute;
+  right: 95px;
+  width: 32px;
+  height: 20px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/icon-video-subtitles.svg");
+  background-repeat: no-repeat;
+}
+
+.video__screen {
+  position: absolute;
+  right: 30px;
+  width: 32px;
+  height: 20px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/icon-video-fullscreen.svg");
+  background-repeat: no-repeat;
+}
+
+@media (min-width: @tablet-width) {
+  .video {
+    margin-bottom: -24px;
+  }
+
+  .video__picture {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .video__control {
+    width: 648px;
+    height: 93px;
+    left: 60px;
+  }
+
+  .video__control-line {
+    width: 389px;
+    top: 46px;
+    left: 93px;
+  }
+
+  .video__control-toggle {
+    left: 113px;
+  }
+
+  .video__btn {
+    top: -80px;
+    width: 648px;
+    background-color: transparent;
+  }
+
+  .video__repeat {
+    left: 35px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .video {
+    margin-bottom: 20px;
+  }
+
+  .video__picture {
+    padding-left: 199px;
+    padding-right: 199px;
+  }
+
+  .video__control {
+    width: 800px;
+    left: 200px;
+  }
+
+  .video__btn {
+    width: 800px;
+  }
 }
