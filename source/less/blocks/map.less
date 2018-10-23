@@ -1,22 +1,27 @@
-.map iframe {
+.map__interactively {
   width: 100%;
 }
 
 .map {
   width: 100%;
   height: 350px;
-  background-image: url(../img/bg-map-mobile@1x.jpg) no-repeat;
+  background-image: url(../img/bg-map-mobile@1x.jpg);
   background-size: cover;
+  background-color: #e5e5e5;
 }
 
 @media (min-width: @tablet-width) {
   .map {
-    background-image: url(../img/bg-map-tablet@1x.jpg) no-repeat;
+    background-image: url(../img/bg-map-tablet@1x.jpg);
+    background-color: #e5e5e5;
+    background-repeat: no-repeat;
   }
 }
 
 @media (min-width: @desktop-width) {
   .map {
-    background-image: url(../img/bg-map-desktop@1x.jpg) no-repeat;
+    background-image: url(../img/bg-map-desktop@1x.jpg);
+    background-color: #e5e5e5;
+    background-repeat: no-repeat;
   }
 }
