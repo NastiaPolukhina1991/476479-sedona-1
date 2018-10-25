@@ -1,3 +1,153 @@
-.photo {
-  width: 100%;
+.photo__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.photo__item {
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 16px;
+}
+
+.photo__item:nth-child(1) {
+  border-top: 1px solid #e5e5e5;
+}
+
+.photo__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 23px;
+}
+
+.photo__description {
+  text-align: left;
+}
+
+.photo__title {
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.photo__author {
+  margin: 0;
+  margin-bottom: 7px;
+  text-transform: none;
+  line-height: 24px;
+}
+
+.photo__btn {
+  border: none;
+  width: 23px;
+  height: 21px;
+  background-image: url("../img/icon-like.svg");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.photo__number {
+  padding-left: 10px;
+  font-weight: bold;
+}
+
+@media (min-width: @tablet-width) {
+  .photo__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .photo__item {
+    border: none;
+    padding-bottom: 0;
+    background-color: @grey;
+
+    &:nth-child(1) {
+      border: none;
+      width: 100%;
+    }
+
+    &:nth-child(3) {
+      background-color: #eaeaea;
+    }
+  }
+
+  .photo__wrapper {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 1px;
+  }
+
+  .photo__description {
+    position: relative;
+  }
+
+  .photo__like {
+    position: absolute;
+    top: 11px;
+    right: 27px;
+
+    &--position {
+      position: absolute;
+      right: 15px;
+      top: 11px;
+    }
+  }
+
+  .photo__title {
+    margin-left: 20px;
+  }
+
+  .photo__author {
+    margin-left: 20px;
+    margin-bottom: 15px;
+  }
+
+  .photo__number {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo__list {
+    padding: 0;
+  }
+
+  .photo__item {
+    height: 267px;
+
+    &:nth-child(1) {
+      height: 400px;
+    }
+  }
+
+  .photo__description {
+    min-height: 80px;
+    top: -80px;
+    color: @white;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .photo__title {
+    margin-top: 0;
+    padding-top: 15px;
+  }
+
+  .photo__like {
+    right: 25px;
+    top: 26px;
+
+    &--position {
+      right: 17px;
+      top: 25px;
+    }
+  }
 }
