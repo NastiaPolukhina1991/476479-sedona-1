@@ -27,17 +27,18 @@
           </li>
         </ul>
         <div class="page-header__wrapper">
-          <img class="page-header__logo" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="логотип Седона">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img class="page-header__logo" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="логотип Седона">
+          </picture>
           <button class="page-header__toggle" type="button"></button>
         </div>
       </nav>
     </header>
     <main class="page-main">
       <div class="page-main-image">
-        <picture>
-
-          <img class="page-main-image__logo" src="img/text-sedona-index.svg" width="281" height="214" alt="Добро пожаловать в Седону">
-        </picture>
+        <img class="page-main-image__logo" src="img/text-sedona-index.svg" width="281" height="214" alt="Добро пожаловать в Седону">
       </div>
       <section class="features-welcome">
         <h1 class="visually-hidden">Туры в Седону</h1>
@@ -54,11 +55,11 @@
             <p class="features__number">— №1 —</p>
             <p class="features__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
-          <div class="features__image">
+          <div class="features__image-wrapper">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg">
-              <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg">
-              <img src="img/main-city-mobile@1x.jpg" alt="Красивый вид города">
+              <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
+              <img class="features__image" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" width="320" height="260" alt="Красивый вид города">
             </picture>
           </div>
         </div>
@@ -79,11 +80,11 @@
           </ul>
         </div>
         <div class="features__picture">
-          <div class="features__image">
+          <div class="features__image-wrapper">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg">
-              <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg">
-              <img src="img/main-bridge-mobile@1x.jpg" alt="Красивый вид каньона">
+              <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x. img/main-bridge-tablet@2x.jpg 2x">
+              <img class="features__image" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" width="320" height="260" alt="Красивый вид каньона">
             </picture>
           </div>
           <div class="features__description features__description--two">
