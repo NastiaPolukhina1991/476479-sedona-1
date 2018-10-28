@@ -42,9 +42,6 @@
   border: none;
   width: 23px;
   height: 21px;
-  background-image: url("../img/icon-like.svg");
-  background-color: transparent;
-  background-repeat: no-repeat;
   opacity: 0.3;
 }
 
@@ -83,6 +80,10 @@
     padding-right: 0;
     padding-top: 0;
     padding-bottom: 1px;
+  }
+
+  .photo__picture {
+    width: 100%;
   }
 
   .photo__description {
@@ -149,5 +150,9 @@
       right: 17px;
       top: 25px;
     }
+  }
+
+  .photo__img path {
+    fill: @white;
   }
 }

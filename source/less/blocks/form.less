@@ -174,32 +174,32 @@
 .form__list-checkbox {
   margin: 0;
   list-style: none;
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-top: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .form__item-checkbox {
   font-size: 18px;
   font-weight: bold;
   text-transform: none;
-  padding-left: 73px;
-  margin-bottom: 55px;
 
   &:nth-child(4) {
-    margin-bottom: 34px;
+    margin-bottom: 8px;
   }
 }
 
 .form__label-checkbox {
   position: relative;
   cursor: pointer;
+  padding-top: 10px;
+  padding-left: 80px;
+  padding-bottom: 25px;
 
   &::before {
     content: "";
     position: absolute;
-    top: -14px;
-    left: -80px;
+    top: 0;
+    left: 0;
     width: 56px;
     height: 56px;
     border-radius: 5px;
@@ -217,8 +217,8 @@
   position: absolute;
   width: 24px;
   height: 16px;
-  top: 7px;
-  left: -62px;
+  top: 18px;
+  left: 17px;
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
 }
@@ -239,6 +239,10 @@
   padding-right: 29px;
 }
 
+.form__btn-wrapper {
+  margin: auto;
+}
+
 .form__btn {
   border: none;
   outline: none;
@@ -250,7 +254,7 @@
   margin-top: 51px;
   margin-bottom: 30px;
   padding-left: 47px;
-  padding-top: 22px;
+  padding-top: 20px;
   padding-right: 47px;
   padding-bottom: 14px;
 }
@@ -296,6 +300,7 @@
 
     & .form__list {
       padding-left: 0;
+      padding-right: 0;
     }
 
     & .form__input {
@@ -325,6 +330,7 @@
 
   .form__sections:nth-child(4) {
     width: 100%;
+    padding-bottom: 20px;
 
     & .form__title {
       margin: auto;
@@ -360,16 +366,21 @@
   .form__list-checkbox {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 103px;
+    justify-content: center;
+    padding-left: 80px;
   }
 
   .form__item-checkbox {
-    margin-right: 73px;
-    margin-bottom: 65px;
+    margin-bottom: 30px;
+  }
+
+  .form__label-checkbox {
+    width: 180px;
+    text-align: left;
   }
 
   .form__item-checkbox:nth-child(3) {
-    margin-right: 87px;
+    margin-right: 0;
 
     & .form__title {
       padding-bottom: 73px;
@@ -385,6 +396,13 @@
     padding-right: 60px;
   }
 
+  .form__btn-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    width: 645px;
+  }
+
   .form__btn {
     display: flex;
     margin-top: 62px;
@@ -393,6 +411,11 @@
     padding-left: 65px;
     padding-bottom: 16px;
     margin-bottom: 59px;
+  }
+
+  .form__field {
+    display: block;
+    padding-top: 80px;
   }
 }
 
@@ -419,14 +442,15 @@
     padding-left: 80px;
 
     & .form__item {
-      margin-bottom: 25px;
+      margin-bottom: 20px;
     }
   }
 
   .form__sections:nth-child(2) {
+    padding-bottom: 8px;
+
     & .form__title {
       margin: auto;
-      padding-left: 21px;
       margin-bottom: 46px;
     }
 
@@ -440,7 +464,7 @@
       display: flex;
 
       & .form__input:nth-child(2) {
-        width: 165px;
+        width: 185px;
         padding-right: 109px;
       }
 
@@ -481,8 +505,8 @@
   }
 
   .form__list-checkbox {
-    padding-left: 11px;
-    padding-top: 8px;
+    padding-left: 0;
+    padding-top: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -497,6 +521,10 @@
     margin-right: 0;
   }
 
+  .form__label-checkbox {
+    width: 130px;
+  }
+
   .form__sections:nth-child(5) .form__title {
     padding-right: 7px;
   }
@@ -505,6 +533,10 @@
     width: 939px;
     padding-right: 0;
     margin-right: 0;
+  }
+
+  .form__btn-wrapper {
+    width: 965px;
   }
 
   .form__btn {
