@@ -44,35 +44,60 @@
 
 .video__repeat {
   position: absolute;
-  left: 25px;
-  width: 16px;
-  height: 20px;
+  left: 20px;
   border: none;
   background-color: transparent;
-  background-image: url("../img/icon-video-replay.svg");
-  background-repeat: no-repeat;
+  fill: #5c6870;
+  cursor: pointer;
+
+  &:hover path {
+    fill: #333333;
+  }
+
+  &:active path {
+    fill: #333333;
+    opacity: 0.3;
+  }
 }
 
 .video__subs {
   position: absolute;
-  right: 75px;
+  right: 80px;
   width: 32px;
   height: 20px;
   border: none;
   background-color: transparent;
-  background-image: url("../img/icon-video-subtitles.svg");
-  background-repeat: no-repeat;
+  fill: #5c6870;
+  cursor: pointer;
+
+  &:hover path {
+    fill: #333333;
+  }
+
+  &:active path {
+    fill: #333333;
+    opacity: 0.3;
+  }
 }
 
 .video__screen {
   position: absolute;
-  right: 10px;
+  right: 15px;
   width: 32px;
   height: 20px;
   border: none;
   background-color: transparent;
-  background-image: url("../img/icon-video-fullscreen.svg");
-  background-repeat: no-repeat;
+  fill: #5c6870;
+  cursor: pointer;
+
+  &:hover polygon {
+    fill: #333333;
+  }
+
+  &:active polygon {
+    fill: #333333;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -113,7 +138,48 @@
   }
 
   .video__repeat {
-    left: 35px;
+    left: 30px;
+    fill: @white;
+
+    &:hover path {
+      fill: @white;
+      opacity: 0.6;
+    }
+
+    &:active path {
+      fill: @white;
+      opacity: 0.3;
+    }
+  }
+
+  .video__subs {
+    right: 99px;
+    fill: @white;
+
+    &:hover path {
+      fill: @white;
+      opacity: 0.6;
+    }
+
+    &:active path {
+      fill: @white;
+      opacity: 0.3;
+    }
+  }
+
+  .video__screen {
+    right: 35px;
+    fill: @white;
+
+    &:hover polygon {
+      fill: @white;
+      opacity: 0.6;
+    }
+
+    &:active polygon {
+      fill: @white;
+      opacity: 0.3;
+    }
   }
 }
 

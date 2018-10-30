@@ -9,7 +9,7 @@
   background-color: @blue;
 }
 
-.main-nav__item a {
+.main-nav__link {
   display: block;
   margin-bottom: 1px;
   padding-left: 21px;
@@ -52,13 +52,24 @@
     }
   }
 
-  .main-nav__item a {
+  .main-nav__link {
     border: none;
     box-shadow: none;
     font-size: 14px;
     color: #000000;
-  }
 
+    &--active {
+      color: #766357;
+
+      &:hover {
+        color: #604e43;
+      }
+
+      &:active {
+        color: rgba(118, 99, 87, 0.3);
+      }
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {
