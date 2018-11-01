@@ -92,11 +92,11 @@
 .form__item-contact .form__input {
   display: block;
   margin-bottom: 13px;
-  padding-right: 58px;
+  padding-right: 50px;
   width: auto;
 }
 
-.form__item-contact--phone::after {
+.form__input-phone::after {
   content: "";
   position: absolute;
   top: 31px;
@@ -109,7 +109,7 @@
   background-image: url("../img/icon-phone.svg");
 }
 
-.form__item-contact--mail::after {
+.form__input-mail::after {
   content: "";
   position: absolute;
   top: 31px;
@@ -344,7 +344,7 @@
     }
 
     & .form__input {
-      width: 87%;
+      width: 86%;
       margin-bottom: 25px;
     }
   }
@@ -565,29 +565,20 @@
 
     & .form__item-contact {
       display: flex;
-
-      & .form__input:nth-child(2) {
-        width: 185px;
-        padding-right: 109px;
-      }
-
-      &--phone::after {
-        top: 0;
-      }
-
-      &--mail::after {
-        top: 0;
-      }
     }
 
     & .form__label {
       padding-left: 0;
       margin-bottom: 20px;
     }
-
-    & .form__input {
-      padding-right: 106px;
-    }
+  }
+  .form__input-phone::after {
+    top: 0;
+    right: -41px;
+  }
+  .form__input-mail::after {
+    top: 0;
+    right: -41px;
   }
 
   .form__label-radio::before {

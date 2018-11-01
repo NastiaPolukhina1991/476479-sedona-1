@@ -70,13 +70,17 @@
         <fieldset class="form__sections form__sections--feedback">
           <legend class="form__title">Контактная информация:</legend>
           <ul class="form__list">
-            <li class="form__item-contact form__item-contact--phone">
+            <li class="form__item-contact">
               <label class="form__label" for="phone"><span class="form__invisible">Контактный</span> телефон*:</label>
-              <input class="form__input" id="phone" type="text" placeholder="Введите телефон" required>
+              <div class="form__input-phone">
+                <input class="form__input" id="phone" type="text" placeholder="Введите телефон" required>
+              </div>
             </li>
-            <li class="form__item-contact form__item-contact--mail">
+            <li class="form__item-contact">
               <label class="form__label" for="mail">Электронная почта*:</label>
-              <input class="form__input" id="mail" type="text" placeholder="Введите e-mail" required>
+              <div class="form__input-mail">
+                <input class="form__input" id="mail" type="text" placeholder="Введите e-mail" required>
+              </div>
             </li>
           </ul>
         </fieldset>
