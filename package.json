@@ -12,11 +12,12 @@
     "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^4.1.0",
     "gulp-less": "4.0.x",
+    "gulp-minify": "0.0.4",
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "8.0.x",
     "gulp-posthtml": "^3.0.4",
     "gulp-rename": "^1.4.0",
-    "gulp-minify": "0.0.4",
+    "minify-js": "0.0.4",
     "posthtml-include": "^1.2.0",
     "stylelint": "9.6.x",
     "stylelint-config-htmlacademy": "0.1.x"
